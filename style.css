@@ -54,7 +54,8 @@ header.hero {
     max-width: 700px;
 
     /* Background image for hero-content */
-    background: linear-gradient(rgba(32,40,70,0.72),rgba(32,40,70,0.82)), url('src/image3.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(32,40,70,0.72),rgba(32,40,70,0.82)), url('src/image3.jpeg') center center no-repeat;
+    background-size: contain;
     border-radius: 28px;
     box-shadow: 0 7px 32px rgba(32,40,70,0.18);
 }
@@ -88,12 +89,17 @@ header.hero {
     padding: 4rem 0;
 }
 
+.section.alt-bg {
+    background: #e6ebf5; /* slightly darker, subtle blue-gray */
+}
+
 .container {
     width: 92vw;
     max-width: 1100px;
     margin: 0 auto;
 }
 
+/* About section styling */
 .about-container {
     display: flex;
     gap: 3rem;
@@ -112,6 +118,28 @@ header.hero {
     width: 100%;
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(32,40,70,0.19);
+}
+
+/* Kenny section styling */
+.kenny-container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+}
+.kenny-text {
+    flex: 1 1 350px;
+}
+.kenny-image {
+    flex: 1 1 340px;
+    text-align: center;
+}
+.kenny-image img {
+    max-width: 340px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(32,40,70,0.13);
 }
 
 h2 {
@@ -201,7 +229,8 @@ footer {
 }
 
 @media (max-width: 900px) {
-    .about-container {
+    .about-container,
+    .kenny-container {
         flex-direction: column-reverse;
         gap: 2rem;
     }
