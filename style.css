@@ -7,7 +7,7 @@ body {
 }
 
 header.hero {
-    background: linear-gradient(rgba(32,40,70,0.85),rgba(32,40,70,0.85)), url('image1.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(32,40,70,0.85),rgba(32,40,70,0.85)), #20384a;
     color: #fff;
     min-height: 65vh;
     display: flex;
@@ -52,7 +52,13 @@ header.hero {
     justify-content: center;
     padding: 4vw;
     max-width: 700px;
+
+    /* Background image for hero-content */
+    background: linear-gradient(rgba(32,40,70,0.72),rgba(32,40,70,0.82)), url('image3.jpg') center/cover no-repeat;
+    border-radius: 28px;
+    box-shadow: 0 7px 32px rgba(32,40,70,0.18);
 }
+
 .hero-content h1 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
