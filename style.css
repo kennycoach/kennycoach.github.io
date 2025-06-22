@@ -54,7 +54,7 @@ header.hero {
     max-width: 700px;
 
     /* Background image for hero-content */
-    background: linear-gradient(rgba(32,40,70,0.72),rgba(32,40,70,0.82)), url('image3.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(32,40,70,0.72),rgba(32,40,70,0.82)), url('src/image3.jpeg') center/cover no-repeat;
     border-radius: 28px;
     box-shadow: 0 7px 32px rgba(32,40,70,0.18);
 }
